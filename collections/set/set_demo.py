@@ -41,3 +41,30 @@ print(s)
 s = {1, 2}
 s.update({3, 4})
 print(s) 
+
+# delete element from a set
+print("Delete element in a set")
+s = {1, 2}
+s.remove(1)  # This can lead to error when there is not element
+print(s)
+
+print("Delete element in a set with out error")
+s = {1, 2}
+s.discard(3)  # This will not lead to any error
+print(s)
+
+# Copying sets
+print("Copying sets, its a shallow copy")
+s = {1, 2}
+s1 = s.copy()
+s2 = set(s)
+print("s", s)
+print("s1", s1)
+print("s2", s2)
+
+# Liner algebra
+print("Set operations")
+s1 = {1, 2}
+s2 = {1, 4}
+print("s1 intersection s2", s1.intersection(s2))
+print("s1 union s2", s1.union(s2))
